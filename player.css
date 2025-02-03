@@ -128,3 +128,12 @@ body{
     bottom: 0;
     cursor: pointer;
 }
+.credit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: Lato;
+    color: rgba(130, 159, 255, 0.05);
+    font-weight: 900;
+    font-size: 2em;
+}

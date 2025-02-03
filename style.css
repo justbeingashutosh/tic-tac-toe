@@ -35,3 +35,12 @@ body{
     color: white;
     font-weight: 600;
 }
+.credit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: Lato;
+    color: rgba(130, 255, 138, 0.106);
+    font-weight: 900;
+    font-size: 2em;
+}
