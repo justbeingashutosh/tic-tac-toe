@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+    margin:0;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    position: relative;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(33, 0, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#table{
+    display: flex;
+    height: 450px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    gap: 10px;
+}
+
+.cell{
+    background-color: rgba(255, 255, 255, 0.364);
+    height: 120px;
+    aspect-ratio: 1/1;
+    font-family: Nunito;
+    border-radius: 10px;
+    font-weight: 900;
+    text-align: center;
+    padding-block: auto;
+    font-size: 6em;
+    color: rgb(255, 135, 135);
+    border: solid rgb(255, 255, 255) 3px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+.cell:hover{
+    transform: scale(1.1);
+}
+
+#alert{
+    position: absolute;
+    text-align: center;
+    transform: translateY(-600px);
+    border-radius: 15px;
+    /* padding-inline: auto; */
+    height: 100px;
+    width: 300px;
+    background-color: rgb(252, 255, 75);
+    border:solid rgb(152, 145, 0) 4px;
+    color: rgb(101, 95, 4);
+    left: 40%;
+    /* right: auto; */
+    top: 0%;
+    opacity: 1;
+    display: flex;
+    /* border: solid red 3px; */
+    margin-inline: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    order: -1;
+    transition-property: opacity, transform;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0, 1.66, 1, 1.58);
+    /* z-index: 20; */
+    font-family: Lato;
+}
+#shade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* content: ''; */
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.307);
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    z-index: -1;
+}
+#alertmsg{
+    margin-block: auto;
+    font-size: 1.7em;
+    font-weight: 600;
+    /* border: solid red 2px; */
+
+}
+#playagain{
+    margin-bottom: 2%;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    border: solid rgb(240, 88, 88) 3px;
+    color: rgb(240, 88, 88);
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+#playagain:hover{
+    background-color: rgb(240, 88, 88);
+    color: white;
+}
+
+/* New code diffn from player.css */
+
+
+
+#symbolchoice{
+    position: absolute;
+    text-align: center;
+    transform: scale(0);
+    border-radius: 15px;
+    /* padding-inline: auto; */
+    height: 150px;
+    width: 300px;
+    background-color: rgb(19, 255, 161);
+    border:solid rgb(0, 131, 98) 4px;
+    color: rgb(1, 112, 83);
+    left: 40%;
+    /* right: auto; */
+    top: 40%;
+    opacity: 1;
+    display: flex;
+    /* border: solid red 3px; */
+    margin-inline: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    order: -1;
+    transition-property: opacity, transform;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0, 1.66, 1, 1.58);
+    z-index: 20;
+    font-family: Lato;
+}
+#symchoicemsg{
+    margin-block: auto;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.symbol{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15%;
+    margin-inline: 10px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.symbol:hover{
+    transform: scale(0.75)
+}
+#x{
+    background-color: rgb(83, 114, 209);
+    border: solid rgb(42, 71, 159) 4px;
+    color: white;
+    font-weight: 600;
+}
+
+#o{
+    background-color: rgb(209, 83, 104);
+    border: solid rgb(137, 21, 41) 4px;
+    color: white;
+    font-weight: 600;
+}
