@@ -3,8 +3,12 @@ const shade = document.querySelector("#shade")
 const alertbox = document.querySelector("#alert")
 const alertmsg = document.querySelector("#alertmsg")
 const playagain = document.querySelector("#playagain")
+const switchmode = document.querySelector("#switchmode")
 playagain.addEventListener('click', ()=>{
     window.location = "computer.html"
+})
+switchmode.addEventListener('click', ()=>{
+    window.location = "player.html"
 })
 
 window.onload = ()=>{

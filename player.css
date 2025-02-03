@@ -117,3 +117,14 @@ body{
     background-color: rgb(240, 88, 88);
     color: white;
 }
+#switchmode{
+    position: absolute;
+    background-color: rgb(209, 83, 104);
+    border: solid rgb(137, 21, 41) 4px;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    border-radius: 10px;
+    bottom: 0;
+    cursor: pointer;
+}
