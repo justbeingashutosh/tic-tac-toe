@@ -49,7 +49,7 @@ const cell9 = document.getElementById("9").textContent
         shade.style.zIndex = "0"
         shade.style.opacity = "1"
     }
-    if(moves==9){
+    else if(moves==9){
         alertmsg.textContent = "Draw!"
         alertbox.style.zIndex="20"
         alertbox.style.opacity = '1'
