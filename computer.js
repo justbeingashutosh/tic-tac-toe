@@ -4,10 +4,7 @@ const alertbox = document.querySelector("#alert")
 const alertmsg = document.querySelector("#alertmsg")
 const playagain = document.querySelector("#playagain")
 const switchmode = document.querySelector("#switchmode")
-let audio = new Audio("assets/8-bit-music-on-245249.mp3")
-audio.autoplay = true
-audio.volume = 0.5
-audio.loop = true
+
 playagain.addEventListener('click', ()=>{
     window.location = "computer.html"
 })
@@ -20,6 +17,11 @@ window.onload = ()=>{
     symbolprompt.style.transform = "scale(1)"
     shade.style.zIndex="0"
     shade.style.opacity="1"
+    let audio = new Audio("assets/8-bit-music-on-245249.mp3")
+    audio.autoplay = true
+    audio.volume = 0.5
+    audio.loop = true
+    audio.play()
 }
 const symbolbtns = document.querySelectorAll(".symbol")
 let userChoice = null
